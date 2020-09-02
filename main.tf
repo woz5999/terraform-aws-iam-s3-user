@@ -9,7 +9,7 @@ data "aws_iam_policy_document" "default" {
 }
 
 module "s3_user" {
-  source        = "git::https://github.com/woz5999/terraform-aws-iam-system-user.git?ref=use-minimum-version"
+  source        = "git::https://github.com/woz5999/terraform-aws-iam-system-user.git?ref=use-minimum-versions"
   namespace     = var.namespace
   stage         = var.stage
   environment   = var.environment
